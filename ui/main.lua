@@ -632,7 +632,7 @@ function library:window(properties)
 		Position = UDim2.new(1, -12,-0.1, -25),
 		Size = UDim2.new(0, 114,0, 64),
 		Image = 'rbxassetid://107814303944449',
-		ScaleType = Enum.ScaleType.Fit,
+		ScaleType = Enum.ScaleType.Stretch,
 	})
 
 	local tab_buttons = library:create("Frame", {
