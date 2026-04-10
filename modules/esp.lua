@@ -1667,13 +1667,13 @@ function UpdateRadar()
 	end
 end
 
-function UpdateESPSettings()
+_G.UpdateESPSettings = function()
 	for key, value in pairs(Config.ESP) do
 		_G.ESPSettings[key] = value
 	end
 end
 
-function ToggleESP(enabled)
+_G.ToggleESP = function(enabled)
 	Config.ESP.Enabled = enabled
 
 	if enabled then
