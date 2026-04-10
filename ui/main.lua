@@ -65,7 +65,7 @@ local themes = {
 	preset = {
 		["outline"] = rgb(32, 32, 38), --
 		["inline"] = rgb(60, 55, 75), --
-		["accent"] = rgb(129, 217, 117), -- rgba(129, 217, 117)
+		["accent"] = rgb(255,255,255), -- rgba(129, 217, 117)
 		["contrast"] = rgb(35, 35, 47),
 		["text"] = rgb(170, 170, 170),
 		["unselected_text"] = rgb(90, 90, 90),
@@ -631,7 +631,7 @@ function library:window(properties)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(1, -12,-0.1, -25),
 		Size = UDim2.new(0, 114,0, 64),
-		Image = 'rbxassetid://137331174994281',
+		Image = 'rbxassetid://137258790630827',
 		ScaleType = Enum.ScaleType.Fit,
 	})
 
