@@ -631,7 +631,7 @@ function library:window(properties)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(1, -12,-0.1, -25),
 		Size = UDim2.new(0, 114,0, 64),
-		Image = 'rbxassetid://107814303944449',
+		Image = 'rbxassetid://114764958601571',
 		ScaleType = Enum.ScaleType.Stretch,
 	})
 
