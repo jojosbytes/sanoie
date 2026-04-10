@@ -1272,7 +1272,7 @@ function RefreshRadarMap(localPos)
 		}
 	end
 end
-function UpdateRadar()
+_G.UpdateRadar = function()
 	if not Config.ESP.RadarEnabled then
 		if _G.ESPRadarComponents then
 			_G.ESPRadarComponents.Background.Visible = false
@@ -3654,10 +3654,10 @@ RunService.RenderStepped:Connect(function(dt)
 		wasRadarEnabled = true
 	end
 	if Config.ESP.RadarEnabled and (currentTime - lastRadarUpdate) >= (1/30) then
-		UpdateRadar()
+		_G.UpdateRadar()
 		lastRadarUpdate = currentTime
 	elseif wasRadarEnabled and not Config.ESP.RadarEnabled then
-		UpdateRadar()
+		_G.UpdateRadar()
 		wasRadarEnabled = false
 	end
 
