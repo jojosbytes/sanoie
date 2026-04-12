@@ -4,7 +4,7 @@ local ws = game:GetService("Workspace")
 local http_service = game:GetService("HttpService")
 local gui_service = game:GetService("GuiService")
 
-local coregui = game.Players.LocalPlayer.PlayerGui
+local coregui = game:GetService('CoreGui')
 local tween_service = game:GetService("TweenService")
 
 local vec2 = Vector2.new
@@ -613,7 +613,7 @@ function library:window(properties)
 		Size = UDim2.new(1, -4, 1, -4),
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
-	
+
 	local tab_buttonssssfake = library:create("Frame", {
 		Parent = main,
 		Name = "holder",
@@ -625,7 +625,7 @@ function library:window(properties)
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
-	
+
 	local image_thing = library:create("ImageLabel", {
 		Parent = tab_buttonssssfake,
 		BackgroundTransparency = 1,
